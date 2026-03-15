@@ -10,4 +10,5 @@ new class extends Component
 
 <div>
     {{-- Simplicity is the essence of happiness. - Cedric Bledsoe --}}
+    <h1>Hi</h1>
 </div>
