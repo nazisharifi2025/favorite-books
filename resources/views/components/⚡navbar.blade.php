@@ -5,6 +5,8 @@ use Livewire\Component;
 new class extends Component
 {
     public $myName = "Nazi";
+    public $date = "";
+    public $currently = ""
 };
 ?>
 
