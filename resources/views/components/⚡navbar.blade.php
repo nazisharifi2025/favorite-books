@@ -8,6 +8,6 @@ new class extends Component
 };
 ?>
 
-<div >
+<div class=" p-5 flex " >
     {{-- Nothing worth having comes easy. - Theodore Roosevelt --}}
 </div>
