@@ -9,6 +9,7 @@ new class extends Component
 ?>
 
 <div class=" p-5 flex justify-between items-center border-b border-gray-300" >
-    <h1>Hi there , Iam  </h1>
+    <h1 class="text-3xl font-serif text-gray-300">Hi there , Iam {{ $myName }} </h1>
+    <input type="text" class=" border" />
     {{-- Nothing worth having comes easy. - Theodore Roosevelt --}}
 </div>
