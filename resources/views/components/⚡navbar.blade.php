@@ -6,7 +6,13 @@ new class extends Component
 {
     public $myName = "Nazi";
     public $date = "";
-    public $currently = ""
+    public $greeting = ""
+    public function mount(){
+        if($this->date >= 18){
+            $this->greeting = "Good Evening";
+        }
+        
+    }
 };
 ?>
 
