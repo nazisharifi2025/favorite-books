@@ -11,7 +11,10 @@ new class extends Component
         if($this->date >= 18){
             $this->greeting = "Good Evening";
         }
-        
+        elseif($this->date >= 12){
+            $this->greeting = "Good Afternoon";
+        }
+       
     }
 };
 ?>
