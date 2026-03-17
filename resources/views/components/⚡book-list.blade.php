@@ -16,7 +16,10 @@ new class extends Component
        <h1>{{ $book->name }}</h1>
        <h2>Author: {{ $book->Author }} </h2>
        <div>
-        
+        <h2>
+          Rating:  {{ $book->rating }}
+        </h2>
+        <button class="">Delete</button>
        </div>
    @endforeach
 </div>
