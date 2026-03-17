@@ -19,7 +19,7 @@ new class extends Component
         <h2>
           Rating:  {{ $book->rating }}
         </h2>
-        <button class=" px-3 py-2 bg-red-600">Delete</button>
+        <button class=" px-3 py-2 bg-red-600 text-white rounded-md">Delete</button>
        </div>
    @endforeach
 </div>
