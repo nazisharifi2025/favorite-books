@@ -13,13 +13,15 @@ new class extends Component
 
 <div class="w-6xl grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 text-gray-300 mx-auto my-6">
    @foreach ($books as $book)
-       <h1>{{ $book->name }}</h1>
+       <div class=" bg-gray-600  p-4 flex flex-col gap-2">
+        <h1 class="text-gray-400 text-2xl ">{{ $book->name }}</h1>
        <h2>Author: {{ $book->Author }} </h2>
        <div class=" flex w-full justify-between">
         <h2>
           Rating:  {{ $book->rating }}
         </h2>
         <button class=" px-3 py-2 bg-red-600 text-white rounded-md">Delete</button>
+       </div>
        </div>
    @endforeach
 </div>
