@@ -15,7 +15,7 @@ new class extends Component
    @foreach ($books as $book)
        <h1>{{ $book->name }}</h1>
        <h2>Author: {{ $book->Author }} </h2>
-       <div>
+       <div class=" flex w-full justify-between">
         <h2>
           Rating:  {{ $book->rating }}
         </h2>
