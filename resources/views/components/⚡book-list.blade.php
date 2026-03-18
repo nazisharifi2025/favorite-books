@@ -42,6 +42,8 @@ new class extends Component
         <div class="flex justify-between items-center">
              <button wire:click="Close" class=" px-3 py-2 rounded-md bg-white">Cloce</button>
              <button wire:click="DeleteBtn" class=" px-3 py-2 rounded-md bg-blue-400">Yes , Delete</button>
+               </div>
+        </div>
        </div>
    @endif
 </div>
