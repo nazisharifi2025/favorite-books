@@ -40,7 +40,7 @@ new class extends Component
         <h1 class=" text-gray-400 text-xl font-bold">Delete This Item</h1>
         <span>Are You sure you want to deleted ?</span>
         <div class="flex justify-between items-center">
-             <button >Cloce</button>
+             <button class="  rounded-md bg-white">Cloce</button>
        </div>
    @endif
 </div>
