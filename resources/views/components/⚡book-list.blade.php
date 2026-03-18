@@ -37,6 +37,7 @@ new class extends Component
    @if ($isModel)
        <div class="w-full min-h-screen absolute top-0 right-0 flex justify-center items-center ">
        <div class=" bg-white rounded-md border-gray-200 flex flex-col gap-2 p-8 w-4/12 justify-between">
+        <h1 >Delete This Item</h1>
        </div>
    @endif
 </div>
