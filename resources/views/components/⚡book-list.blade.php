@@ -39,6 +39,7 @@ new class extends Component
        <div class=" bg-white rounded-md border-gray-200 flex flex-col gap-2 p-8 w-4/12 justify-between">
         <h1 class=" text-gray-400 text-xl font-bold">Delete This Item</h1>
         <span>Are You sure you want to deleted ?</span>
+        <div class="flex justify-between items-center">
        </div>
    @endif
 </div>
