@@ -20,6 +20,9 @@ new class extends Component
         $this->Books = Book::all();
         $this->isModel = false ;
     }
+      public function Close(){
+      
+    }
   
 };
 ?>
