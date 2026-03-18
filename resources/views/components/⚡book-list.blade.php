@@ -34,5 +34,7 @@ new class extends Component
        </div>
        </div>
    @endforeach
-  
+   @if ($isModel)
+     
+   @endif
 </div>
