@@ -15,6 +15,8 @@ new class extends Component
         $this->isModel = true ;
     }
      public function DeleteBtn(){
+        $book = Book::findOrFail($this->BookId);
+        $book->delete();
         
     }
   
