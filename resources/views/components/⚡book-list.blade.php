@@ -21,7 +21,8 @@ new class extends Component
         $this->isModel = false ;
     }
       public function Close(){
-      
+        $this->BookId = null;
+        $this->isModel = false ;
     }
   
 };
