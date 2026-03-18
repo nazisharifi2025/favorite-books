@@ -35,6 +35,8 @@ new class extends Component
        </div>
    @endforeach
    @if ($isModel)
-     
+       <div class="w-full min-h-screen ">
+       
+       </div>
    @endif
 </div>
