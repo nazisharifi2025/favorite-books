@@ -14,6 +14,9 @@ new class extends Component
         $this->BookId = $id ;
         $this->isModel = true ;
     }
+     public function DeleteBtn(){
+        
+    }
   
 };
 ?>
