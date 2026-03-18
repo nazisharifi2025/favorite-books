@@ -14,17 +14,16 @@ new class extends Component
         $this->BookId = $id ;
         $this->isModel = true ;
     }
-     public function DeleteBtn(){
+      public function Close(){
+        $this->BookId = null;
+        $this->isModel = false ;
+    }
+    public function DeleteBtn(){
         $book = Book::findOrFail($this->BookId);
         $book->delete();
         $this->Books = Book::all();
         $this->isModel = false ;
     }
-      public function Close(){
-        $this->BookId = null;
-        $this->isModel = false ;
-    }
-  
 };
 ?>
 
@@ -40,19 +39,18 @@ new class extends Component
         <h2>
           Rating:  <span class="text-green-400 font-bold">{{ $book->rating }}</span>
         </h2>
-        <button wire:click="DeleteBook({{ $book->id }})" class=" px-3 py-2 bg-red-600 text-white rounded-md">Delete</button>
+        <button wire:click="DeleteBook({{ $this->id }})" class=" px-3 py-2 bg-red-600 text-white rounded-md">Delete</button>
        </div>
        </div>
-   @endforeach
-   @if ($isModel)
-       <div class="w-full min-h-screen absolute top-0 right-0 flex justify-center items-center ">
-       <div class=" bg-white rounded-md border-gray-200 flex flex-col gap-2 p-8 w-4/12 justify-between">
-        <h1 class=" text-gray-400 text-xl font-bold">Delete This Item</h1>
-        <span>Are You sure you want to deleted ?</span>
-        <div class="flex justify-between items-center">
-             <button wire:click="Close" class=" px-3 py-2 rounded-md bg-white">Cloce</button>
-             <button wire:click="DeleteBtn" class=" px-3 py-2 rounded-md bg-blue-400">Yes , Delete</button>
-               </div>
+ @if ($isModel)
+       <div class="w-full min-h-screen absolute top-0 right-0 flex justify-center items-center">
+        <div class=" bg-white rounded-md border-gray-200 flex flex-col gap-2 p-8 w-4/12 justify-between">
+            <h1 class=" text-gray-400 text-xl font-bold">Delete This Item</h1>
+            <span>Are You sure you want to deleted ?</span>
+            <div class="flex justify-between items-center">
+                <button wire:click="Close" class=" px-3 py-2 rounded-md bg-white">Cloce</button>
+                <button wire:click="DeleteBtn" class=" px-3 py-2 rounded-md bg-blue-400">Yes , Delete</button>
+            </div>
         </div>
        </div>
    @endif
