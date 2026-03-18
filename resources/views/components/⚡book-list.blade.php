@@ -36,7 +36,7 @@ new class extends Component
    @endforeach
    @if ($isModel)
        <div class="w-full min-h-screen absolute top-0 right-0 flex justify-center items-center ">
-       <div class=" bg-white rounded-md border-gray-200 flex ">
+       <div class=" bg-white rounded-md border-gray-200 flex flex-col gap-2 p-8 w-4/12 justify-between">
        </div>
    @endif
 </div>
