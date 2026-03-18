@@ -10,6 +10,11 @@ new class extends Component
     public function mount(){
         $this->books = Book::all();
     }
+    public function DeleteBook($id){
+        $this->BookId = $id ;
+        $this->isModel = true ;
+    }
+  
 };
 ?>
 
@@ -25,8 +30,9 @@ new class extends Component
         <h2>
           Rating:  <span class="text-green-400 font-bold">{{ $book->rating }}</span>
         </h2>
-        <button class=" px-3 py-2 bg-red-600 text-white rounded-md">Delete</button>
+        <button wire:click="DeleteBook({{ $book->id }})" class=" px-3 py-2 bg-red-600 text-white rounded-md">Delete</button>
        </div>
        </div>
    @endforeach
+  
 </div>
